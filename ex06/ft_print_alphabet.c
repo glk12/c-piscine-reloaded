@@ -6,7 +6,7 @@
 /*   By: glopes-a <glopes-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:32:58 by glopes-a          #+#    #+#             */
-/*   Updated: 2025/10/13 16:37:43 by glopes-a         ###   ########.fr       */
+/*   Updated: 2025/10/15 11:05:13 by glopes-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@ void	ft_putchar(char c);
 
 void	ft_print_alphabet(void)
 {
-	char c;
+	char	c;
+
 	c = 'a';
-	
-	while(c <= 'z')
+	while (c <= 'z')
 	{
 		ft_putchar(c);
 		c++;

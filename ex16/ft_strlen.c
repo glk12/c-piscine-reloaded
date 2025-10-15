@@ -6,16 +6,16 @@
 /*   By: glopes-a <glopes-a@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:03:43 by glopes-a          #+#    #+#             */
-/*   Updated: 2025/10/14 13:05:52 by glopes-a         ###   ########.fr       */
+/*   Updated: 2025/10/15 11:14:19 by glopes-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strlen(char *str)
 {
 	int	count;
-	
+
 	count = 0;
-	while(str[count])
+	while (str[count])
 		count++;
 	return (count);
 }

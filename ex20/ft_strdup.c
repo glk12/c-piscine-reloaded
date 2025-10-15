@@ -1,28 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: glopes-a <glopes-a@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 10:17:45 by glopes-a          #+#    #+#             */
-/*   Updated: 2025/10/15 11:28:08 by glopes-a         ###   ########.fr       */
+/*   Created: 2025/10/14 14:45:14 by glopes-a          #+#    #+#             */
+/*   Updated: 2025/10/15 11:22:45 by glopes-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int nb)
+#include <stdlib.h>
+
+int	ft_strlen(char *s)
 {
-	if (nb == 0 || nb == 1)
-		return (1);
-	if (nb < 0)
-		return (0);
-	else
-		return (nb * ft_recursive_factorial(nb - 1));
+	int	count;
+
+	count = 0;
+	while (s[count])
+		count++;
+	return (count);
 }
-/*
-#include <stdio.h>
-int main()
+
+char	*ft_strdup(char *src)
 {
-	printf("%d",ft_recursive_factorial(5));
+	char	*s;
+	char	*dest;
+
+	s = (char *)malloc(ft_strlen(src) + 1 * sizeof(char));
+	if (!s)
+		return (NULL);
+	dest = s;
+	while (*src)
+		*s++ = *src++;
+	*s = '\0';
+	return (dest);
 }
-*/

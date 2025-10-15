@@ -6,17 +6,16 @@
 /*   By: glopes-a <glopes-a@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 12:54:03 by glopes-a          #+#    #+#             */
-/*   Updated: 2025/10/14 13:29:26 by glopes-a         ###   ########.fr       */
+/*   Updated: 2025/10/15 11:13:57 by glopes-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
-	while(*str)
+	while (*str)
 	{
 		ft_putchar(*str);
 		str++;
 	}
 }
-
